@@ -1,0 +1,196 @@
+/*Esta bien presentado el import de tipografia?
+ osea se cambio en toda la pagina como queria pero esta bien la estructura?*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+Nandinagari&family=Roboto&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*---Header---*/
+/* NOTA: Use Flexbox para ubicar el "nav ul" del lado derecho y el h1 del izquierdo,
+ como para que quede mejor*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A0930;
+}
+.menu h1{
+    padding: 0px; ;
+    margin: 10px;
+  }
+ 
+  
+  .menu nav ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+  }
+
+.menu nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 35px;
+  }
+
+.menu nav ul li a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*----Main-Index---*/
+/*----Principal*/
+
+.principal h2 {
+    font-size: 30px;
+    margin: -4px;
+    padding:20px;
+    color: white;
+    background-color: #1A0930
+    }
+
+
+/*----Main-index-eventos----*/
+
+
+main {
+    background-color: white;
+}
+  
+  .eventos h2,
+  .eventos button a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+    .eventosImg img {
+    width: 357px;
+    margin: 10px;
+    padding: 10px;
+    }
+
+/*----Main-index-Novedades----*/
+
+.novedades h2 {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/*.novedadesImg img {
+    width: 909px;
+    margin: 20px;
+    padding: 0px;
+    border: 2px solid black
+}*/
+.novedadesImg img {
+  display: grid;
+  grid-template-areas:
+  "not1 not2"
+  "not1 not3"
+  "not4 not5";
+}
+
+.not1{
+  grid-area: not1;
+}
+.not2{
+  grid-area: not2;
+}
+.not3{
+  grid-area: not3;
+}
+.not4{
+  grid-area: not4;
+}
+.not5{
+  grid-area: not5;
+}
+
+
+/*----main-pagina-Novedades----*/
+.noticia {
+    margin: 20px;
+}
+
+.arctic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arctic img {
+    width: 400px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+  .arctic p {
+    font-size: 40px;
+    margin-top: -80px;
+  }
+
+
+  /*----Main-pagina-Agenda----*/
+
+  .agenda {
+    margin: 20px;
+  }
+  .agenda h2 {
+    margin-top: 20px;
+  }
+
+
+  /*----Main-pagina-Nosotros----*/
+
+  .nosotros {
+    text-align: center;
+    font-size: 50px;
+    margin: 80px;
+  }
+  .arctic2 {
+    overflow: hidden;
+  }
+  .arctic2 img {
+    float: right;
+    width: 400px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+
+  .arctic2 p {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+
+/*----Footer----*/
+
+footer {
+    background-color: #1A0930;
+}
+footer section{
+    display: inline-block;
+    margin: 20px;
+    color: rgb(189, 152, 152);
+}
+
+footer .redes {
+    float: right;
+}
+
+.redes img {
+    padding: 50px 20px
+}
+
+
+/*NOTA: EN MI PC SE VE BIEN QUIZAS SI ES UN MONITOR MAS GRANDE O MAS CHICO SE ROMPA.
+EL RESPONSIVE NO ESTA BIEN, PERO CREO QUE HASTA LA CLASE 4 NO SE EXPLICO.
+SI AGRANDO O ACHICO LA PANTALLA SE ROMPE*/
