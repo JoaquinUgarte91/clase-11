@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+Nandinagari&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-HEADER-*/
+
+header {
+    background-color: #1A0930;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.col-4 {
+    padding-top: 15px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+header nav ul li{
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+li a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/*carrousel*/
+
+#carousel1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.carousel-caption{
+    background-color: rgba(26, 9, 48, 0.75);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.carousel-caption h5{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#carouselExampleCaptions {
+    width: 85%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.75);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    }
+  
+  
+
+/*MAIN-INDEX-EVENTOS*/
+.eventos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eventos h2 {
+    margin: 20px;
+    margin-left: 7.5%;
+  }
+
+  .eventos button{
+    margin-right: 150px;
+    background-color: #1A0930;
+  }
+  .eventos button a{
+    color: white;
+    text-decoration: none;
+    }
+
+
+    /*--MAIN INDEX EVENTOS GRILLA*/
+
+    .eventosImg {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        padding-left: 8%;
+        margin-right: 75px;
+        grid-row-gap: 40px;
+      }
+
+      .eventosImg img{
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+        }
+
+    
+      /*--MAIN-INDEX-NOVEDADES--*/
+
+.novedades {
+    margin: 20px;
+    margin-left: 7.5%;
+}
+
+.novedadesImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 30px;
+    width: 86%;
+    margin-left: 7%;
+}
+
+.galeria_novedad {
+    position: relative;
+    border-radius: 10px;
+}
+
+.novedadesImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+
+.galeria_titulo {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(26, 9, 48, 0.75);
+    width: 100%;
+    margin: 0;
+    height: 20%;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.galeria_novedad:nth-child(1) {
+    grid-row-start: span 2;
+
+}
+
+.galeria_novedad:nth-child(4) {
+    grid-column-start: span 2;
+
+}
+
+    /*MAIN-EVENTOS*/
+
+.evento2 {
+    margin-bottom: 30px;
+}
+
+
+    /*MAIN-NOVEDADES*/
+
+.noticia2{
+    padding-left: 7%;
+    padding-right: 7.5%;
+}
+
+.arctic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .arctic img {
+    width: 400px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+
+  .arctic p {
+    font-size: 30px;
+    margin-top: -80px;
+  }
+
+  /*-MAIN-AGENDA*/
+
+  .agenda2 {
+    margin: 20px;
+    margin-left: 7.5%;
+}
+
+.agenda{
+    margin-left: 1%;
+}
+
+/*-MAIN-NOSOTROS*/
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 80px;
+  }
+
+.nosotros2{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+  .arctic2 {
+    overflow: hidden;
+  }
+  .arctic2 img {
+    float: right;
+    width: 400px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+
+  .arctic2 p {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+
+    /*--footer*/
+
+footer{
+    height: 150px;
+    background-color: #1A0930;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div img, .footer div h3 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo{
+    width: 200px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.tyc h3{
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+.redes{
+    margin: 20px;
+    margin-right: 50px;
+}
+.redes img{
+    filter: invert(100%);
+    
+    margin-left: 40px;
+}
+
+
