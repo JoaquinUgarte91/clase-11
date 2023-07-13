@@ -3,41 +3,72 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 /*-HEADER-*/
 
-header {
+header{
     background-color: #1A0930;
-    width: 100%;
-}
-
-.container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-  }
-
-.col-4 {
-    padding-top: 15px;
+    height: 120px;
+    padding: 5px 6%;
 }
 
-header nav ul{
-    display: flex;
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px;
+
+.logo img {
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+    padding-top: 10px;
+}
+
+.logo img:hover{
+    transform: scale(1.2)
+}
+
+header nav ul {
+    list-style: none;
 }
 
 header nav ul li{
-    margin-left: 100px;
-    padding-top: 20px;
+    display: inline-block;
+    padding:  0 20px;
+    margin-top: 20px;
 }
 
-li a{
+header nav ul li:hover{
+    transform: scale(1.2);
+}
+
+header nav ul a{
+    font-size: 700;
     color: white;
-    list-style-type: none;
     text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: rgb(36, 128, 151);
+}
+
+.btn button{
+    font-weight: 700;
+    color: #1A0930;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 30px;
+}
+
+.btn button:hover{
+    background-color:rgb(36, 128, 151) ;
+    transform: scale(1.1);
 }
 
 
@@ -76,37 +107,65 @@ li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 6.5%;
+
   }
   
   .eventos h2 {
     margin: 20px;
-    margin-left: 7.5%;
+    font-weight: 700;
   }
 
-  .eventos button{
-    margin-right: 150px;
-    background-color: #1A0930;
-  }
-  .eventos button a{
+  .btn2 button{
+    font-weight: 500;
     color: white;
-    text-decoration: none;
-    }
+    padding: 9px 25px;
+    background: #1a0930;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 30px;
+}
+
+.btn2 button:hover{
+    background-color:rgb(36, 128, 151) ;
+    transform: scale(1.1);
+}
+
 
 
     /*--MAIN INDEX EVENTOS GRILLA*/
 
-    .eventosImg {
+    .eventosImg{
+        width: 84%;
+        height: 84%;
+        margin: auto;
+        padding: 40px 0;
         display: grid;
-        grid-template-columns: repeat(5, 1fr); 
-        padding-left: 8%;
-        margin-right: 75px;
-        grid-row-gap: 40px;
-      }
-
-      .eventosImg img{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+    }
+    
+    .card{
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-        }
+        min-height: 500px;
+        font-weight: bold;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .textos{
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
 
     
       /*--MAIN-INDEX-NOVEDADES--*/
@@ -121,8 +180,8 @@ li a{
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
     grid-gap: 30px;
-    width: 86%;
-    margin-left: 7%;
+    width: 87%;
+    margin-left: 6.5%;
 }
 
 .galeria_novedad {
@@ -276,5 +335,3 @@ footer{
     
     margin-left: 40px;
 }
-
-
