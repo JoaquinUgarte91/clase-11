@@ -2,6 +2,8 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -9,15 +11,17 @@
 
 /*-HEADER-*/
 
+
 header{
     background-color: #1A0930;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    padding: 5px 6%;
+    padding: 5px 12.5%;
+    margin: 0 auto;
 }
-
+ 
 
 .logo img {
     height: 100px;
@@ -26,58 +30,46 @@ header{
     padding-top: 10px;
 }
 
-.logo img:hover{
-    transform: scale(1.2)
+.nav__label, .nav__input{
+    display: none;
 }
 
-header nav ul {
-    list-style: none;
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 20px;
+    gap: 3em;
 }
 
-header nav ul li{
-    display: inline-block;
-    padding:  0 20px;
-    margin-top: 20px;
-}
 
-header nav ul li:hover{
-    transform: scale(1.2);
-}
-
-header nav ul a{
-    font-size: 700;
+.nav__item{
     color: white;
     text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-header nav ul li a:hover{
-    color: rgb(36, 128, 151);
-}
-
-.btn button{
-    font-weight: 700;
-    color: #1A0930;
-    padding: 9px 25px;
+.nav__item::after{
+    content: "";
+    display: block;
     background: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-right: 30px;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
 }
 
-.btn button:hover{
-    background-color:rgb(36, 128, 151) ;
-    transform: scale(1.1);
+.nav__item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-
 
 /*carrousel*/
 
-#carousel1 {
+  #carousel1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
 
 
@@ -99,15 +91,15 @@ header nav ul li a:hover{
     border-bottom-left-radius: 10px;
     overflow: hidden;
     }
-  
-  
 
-/*MAIN-INDEX-EVENTOS*/
+
+    /*MAIN-INDEX-EVENTOS*/
+
 .eventos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 6.5%;
+    padding: 5px 11%;
 
   }
   
@@ -133,46 +125,45 @@ header nav ul li a:hover{
     transform: scale(1.1);
 }
 
-
-
+    
     /*--MAIN INDEX EVENTOS GRILLA*/
 
-    .eventosImg{
-        width: 84%;
-        height: 84%;
-        margin: auto;
-        padding: 40px 0;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 60px;
-    }
-    
-    .card{
-        border-radius: 10px;
-        min-height: 500px;
-        font-weight: bold;
-        padding: 20px;
-        position: relative;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center center;
-    }
-    
-    .textos{
-        height: 100%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-    }
+.eventosImg{
+    width: 75%;
+    margin: auto;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
 
-    
-      /*--MAIN-INDEX-NOVEDADES--*/
+.card{
+    border-radius: 10px;
+    height: 50vh;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.textos{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/*--MAIN-INDEX-NOVEDADES--*/
+
 
 .novedades {
     margin: 20px;
-    margin-left: 7.5%;
+    margin-left: 12%;
 }
 
 .novedadesImg {
@@ -180,8 +171,8 @@ header nav ul li a:hover{
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
     grid-gap: 30px;
-    width: 87%;
-    margin-left: 6.5%;
+    width: 78%;
+    margin-left: 11%;
 }
 
 .galeria_novedad {
@@ -219,119 +210,294 @@ header nav ul li a:hover{
 
 }
 
-    /*MAIN-EVENTOS*/
 
-.evento2 {
-    margin-bottom: 30px;
+/*--footer*/
+
+.contenedor{
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-
-    /*MAIN-NOVEDADES*/
-
-.noticia2{
-    padding-left: 7%;
-    padding-right: 7.5%;
-}
-
-.arctic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .arctic img {
-    width: 400px;
-    margin: 20px;
-    border: 2px solid black;
-  }
-
-  .arctic p {
-    font-size: 30px;
-    margin-top: -80px;
-  }
-
-  /*-MAIN-AGENDA*/
-
-  .agenda2 {
-    margin: 20px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-}
-
-.agenda{
-    margin-left: 1%;
-}
-
-/*-MAIN-NOSOTROS*/
-
-.nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    margin: 80px;
-  }
-
-.nosotros2{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-  .arctic2 {
-    overflow: hidden;
-  }
-  .arctic2 img {
-    float: right;
-    width: 400px;
-    margin: 20px;
-    border: 2px solid black;
-  }
-
-  .arctic2 p {
-    font-size: 30px;
-    margin-top: 100px;
-  }
-
-
-    /*--footer*/
-
-footer{
-    height: 150px;
+.footer {
     background-color: #1A0930;
-    
+    padding: 70px 0;
 }
 
-.footer{
+.footer-row{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.footer div img, .footer div h3 {
-  display: inline-block;
-  vertical-align: middle;
+.footer-link, .logo2{
+    width: 25%;
+    padding: 0 15px;
 }
 
-.logo{
-    width: 200px;
-    margin: 20px;
-    margin-left: 50px;
-}
-
-.tyc h3{
+.footer-link h4{
     font-size: 20px;
     color: white;
-    margin-left: 50px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
-.redes{
-    margin: 20px;
-    margin-right: 50px;
+.footer-link ul li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
 }
-.redes img{
-    filter: invert(100%);
+
+.footer-link ul li a:hover {
+    color: #00c3ff;
+    padding-left: 6px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0, 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #1A0930;
+    transition: all .5s ease;
+}
+
+.redes-sociales a:hover{
+    background-color: #00c3ff;
+}
+
+
+@media (min-width: 50px) and (max-width: 750px){
+   
+    /*--Header nav sandwich--*/
+ 
+     .nav__label{
+         display: block;
+         cursor: pointer;
+         color: white;
+         
+     }
+ 
+     .nav__menu{
+         position: fixed;
+         top: 120px;
+         bottom: 0;
+         background: #1A0930;
+         width: 100%;
+         left: 0;
+         display: flex;
+         justify-content: space-evenly;
+         flex-direction: column;
+         align-items: center;
+         clip-path: circle(0 at center);
+         transition: clip-path 1s ease-in-out;
+     }
+     .nav__input:checked + .nav__menu{
+         background: #1A0930;
+         clip-path: circle(100% at center);
+ 
+     }
+ 
+     /*carousel*/
+ 
+     #carousel1{
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+ 
+     #carouselExampleCaptions {
+         width: 100%;}
+ 
+ 
+ 
+     /*MAIN-INDEX-EVENTOS*/
+ 
+     .eventos {
+        padding: 4px 2%;
+      }
+      .eventos h2 {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .btn2 button{
+        font-weight: 400;
+        font-size: 10px;
+    }
+ 
+     /*--eventos index grilla--*/
+ 
+     .eventosImg {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .card{
+        height: 35vh;
+        }
+
+        /*--Novedades index main--*/
+        
+        .novedades {
+            margin-left: 5%;
+        }
+
+        .novedades_index{
+            padding-bottom: 30px;
+        }
+        
+        .novedades h2{
+            font-weight: 600;
+            font-size: 20px;
+        }
     
-    margin-left: 40px;
+        .novedadesImg {
+            padding: 0px;
+            grid-gap: 20px;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+    /*--Footer--*/
+
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-link, .logo2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
+ @media (min-width: 751px) and (max-width: 1000px){
+    
+    /* header*/
+    
+    header{
+        padding: 5px 7%;
+    }
+    .logo img{
+        padding-left: -20px;
+    }
+    .nav__menu a{
+        font-size: 12px;
+    }
+
+    /*carousel*/
+
+    #carousel1{
+        width: 100%;
+    }
+
+    .carousel-caption h5{
+        font-size: 15px;
+    }
+    
+    /*MAIN-INDEX-EVENTOS*/
+
+    .eventos {
+        padding: 4px 6%;
+      }
+      .eventos h2 {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .btn2 button{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    
+    /*--eventos index grilla--*/
+
+     .eventosImg{
+        width: 82%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .card{
+        height: 40vh;
+    }
+    #card2{
+        display: none;
+    }
+
+    /*--Novedades index--*/
+    
+    .novedades {
+        margin-left: 9%;
+    }
+
+    .novedades_index{
+        padding-bottom: 30px;
+    }
+    .novedades h2{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .novedadesImg {
+        padding: 0px;
+        grid-gap: 20px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /*--footer--*/
+
+    .footer {
+        padding: 20px;
+    
+    }
+    .contenedor{
+        width: 100%;
+    }
+    
+    .footer-link h4{
+        font-size: 14px;
+    }
+    
+    .footer-link ul li a{
+        font-size: 12px;
+    }
+
+    .redes-sociales a{
+        min-height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+  
+}
+
+
+
+@media (min-width: 1001px) and (max-width: 1440px){
+    
+    .card{
+        height: 40vh;
+    }
+    .eventosImg{
+        gap: 20px;
+    }
+
+    .tyc h3{
+        display: inline;
+    }
+
+
 }
