@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeaTsy</title>
     <link rel="shortcut icon" href="./iconos/icon.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -15,26 +16,28 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <section class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h1><a href="index.html"><img src="./iconos/logo.png" alt="Logo"></a></h1>
-                </div>   
-                <nav class="col-8">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="./pages/eventos.html">EVENTOS</a></li>
-                        <li><a href="./pages/novedades.html">NOVEDADES</a></li>
-                        <li><a href="./pages/agenda.html">AGENDA</a></li>
-                        <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                    </ul>    
-                </nav>
-            </div>
-        </section>
+    <header>        
+        </div>
+        <div class="logo">
+            <h1><a href="index.html"><img src="./iconos/logo.png" alt="Logo"></a></h1>
+        </div>
+
+        <nav>
+            <label for="menu3" class="nav__label">
+                <i class="fas fa-bars" class="nav__img"></i>
+            </label>
+            <input type="checkbox" id="menu3" class="nav__input">
+            <ul class="nav__menu">
+                <li><a href="index.html" class="nav__item">HOME</a></li>
+                <li><a href="./pages/eventos.html" class="nav__item">EVENTOS</a></li>
+                <li><a href="./pages/novedades.html" class="nav__item">NOVEDADES</a></li>
+                <li><a href="./pages/agenda.html" class="nav__item">AGENDA</a></li>
+                <li><a href="./pages/nosotros.html" class="nav__item">NOSOTROS</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="container-fluid" id="carousel1">
+        <section class="container-fluid"" id="carousel1">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -49,15 +52,15 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./imagenes/imagenprincipal.jpg" class="d-block w-100" alt="concierto">
+                    <img src="./imagenes/acdc (1).jpg" class="d-block w-100" alt="concierto">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Con BeaTsy empesa a vivir la musica como nunca antes, registrate y empeza a disfrutar.</h5>
+                      <h5>AD/DC Vuelve a la Argentina.</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./imagenes/imagenprincipal.jpg" class="d-block w-100" alt="concierto">
+                    <img src="./imagenes/Artic-Concert.jpg" class="d-block w-100" alt="concierto">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Con BeaTsy empesa a vivir la musica como nunca antes, registrate y empeza a disfrutar.</h5>
+                      <h5>Revivi el concierto de Arctic Monkeys en Buenos Aires en 4k.</h5>
                     </div>
                   </div>
                 </div>
@@ -71,64 +74,143 @@
                 </button>
               </div>
         </section>
+
         <section>
             <div class="eventos">
                 <h2>#Eventos Destacados</h2>
-                <button type="button" class="btn btn-primary btn-sm"><a href="./pages/eventos.html">Ver Todos los Eventos</a></button>
-            </div>
-            <div class="eventosImg">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
-                <img src="./imagenes/Eventos/pepsi.png" alt="Banner Evento">
+                <a href="" class="btn2"><button>Ver todos los eventos</button></a>
             </div>
         </section>
-        <section>
+
+        <section class="eventosImg">
+        
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+  
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+  
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+          
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+          
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+          
+          <div class="card" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <div class="textos">
+                      <h3>Evento</h3>
+                      <p>parrafo</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="card" id="card2" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+          
+          <div class="card" id="card2" style="background-image: url(./imagenes/Eventos/pepsi.png);">
+              <<div class="textos">
+                  <h3>Evento</h3>
+                  <p>parrafo</p>
+              </div>
+          </div>
+        </section>
+        
+        </section>
+        <section class="novedades_index">
             <div class="novedades">
                 <h2>#Novedades</h2>
             </div>
             <div class="novedadesImg">
-              <div class="galeria_novedad">
-                  <img src="./imagenes/imagenprincipal.jpg" alt="Novedad" class="not1">
-                  <h3 class="galeria_titulo">imagen 1</h3>
-              </div>
-              <div class="galeria_novedad">
-                  <img src="./imagenes/imagenprincipal.jpg" alt="Novedad" class="not1">
-                  <h3 class="galeria_titulo">imagen 2</h3>
-              </div>
-              <div class="galeria_novedad">
-                  <img src="./imagenes/imagenprincipal.jpg" alt="Novedad" class="not1">
-                  <h3 class="galeria_titulo">imagen 3</h3>
-              </div>
-              <div class="galeria_novedad">
-                  <img src="./imagenes/imagenprincipal.jpg" alt="Novedad" class="not1">
-                  <h3 class="galeria_titulo">imagen 4</h3>
-              </div>
+                <div class="galeria_novedad">
+                    <img src="./imagenes/imagenprincipal.jpg" alt="Novedad" class="not1">
+                    <h3 class="galeria_titulo">imagen 1</h3>
+                </div>
+                <div class="galeria_novedad">
+                    <img src="./imagenes/acdc (1).jpg" alt="Novedad" class="not1">
+                    <h3 class="galeria_titulo">imagen 2</h3>
+                </div>
+                <div class="galeria_novedad">
+                    <img src="./imagenes/Artic-Concert.jpg" alt="Novedad" class="not1">
+                    <h3 class="galeria_titulo">imagen 3</h3>
+                </div>
+                <div class="galeria_novedad">
+                    <img src="./imagenes/arckticvivo.jpg" alt="Novedad" class="not1">
+                    <h3 class="galeria_titulo">imagen 4</h3>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-      <section class="footer">
-          <div class="tyc">
-              <img src="./iconos/logo.png" alt="Logo" class="logo">
-              <h3>BeaTsy © Todos los Derechos Reservados</h3>
-              <h3>Politicas de Privacidad</h3>
-              <h3>Terminos de Uso</h3>
-          </div>
-          <div class="redes">
-              <a href="https://www.facebook.com/" target="_blank"><img src="./iconos/🦆 icon _Facebook_.png" alt="Facebook"></a>
-              <a href="https://www.instagram.com/" target="_blank"><img src="./iconos/🦆 icon _Instagram_.png" alt="Instagram"></a>
-              <a href="https://www.twitter.com/" target="_blank"><img src="./iconos/🦆 icon _Twitter_.png" alt="Twitter"></a>
-              <a href="https://www.youtube.com/" target="_blank"><img src="./iconos/🦆 icon _YouTube_.png" alt="Youtube"></a>
-              <a href="https://www.tiktok.com" target="_blank"><img src="./iconos/🦆 icon _TikTok_.png" alt="TikTok"></a>
-          </div>
-      </section>
-  </footer>
+
+    <footer class="footer">
+        <section class="contenedor">
+            <div class="footer-row">
+
+                <div class="logo2">
+                    <img src="./iconos/logo.png" alt="Logo" class="logo3">
+                </div>
+
+                <div class="footer-link">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Escribinos</a></li>
+                        <li><a href="#">beatsy.music@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Seguinos!</h4>
+                    <div class="redes-sociales">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </footer>
+
+    
 </body>
 </html>
