@@ -13,13 +13,15 @@
 
 
 header{
+    position: fixed;
+    width: 100%;
     background-color: #1A0930;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
     padding: 5px 12.5%;
-    margin: 0 auto;
+    margin: auto;
     .logo img {
         height: 100px;
         width: auto;
@@ -62,7 +64,9 @@ header{
     
     /*carrousel*/
     
-    #carousel1 {
+        main{
+        margin-top: 120px;}
+        #carousel1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,7 +196,7 @@ header{
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
             }
         }
-    
+ 
     
 
 /*--footer*/
@@ -264,14 +268,14 @@ header{
    
     /*--Header nav sandwich--*/
  
-     .nav__label{
+    header nav .nav__label{
          display: block;
          cursor: pointer;
          color: white;
          
      }
  
-     .nav__menu{
+     header nav .nav__menu{
          position: fixed;
          top: 120px;
          bottom: 0;
@@ -285,11 +289,15 @@ header{
          clip-path: circle(0 at center);
          transition: clip-path 1s ease-in-out;
      }
-     .nav__input:checked + .nav__menu{
+        .nav__input:checked + .nav__menu{
          background: #1A0930;
          clip-path: circle(100% at center);
+         z-index: 100;
+         padding: 0;
+         margin: 0;
  
      }
+
  
      /*carousel*/
  
