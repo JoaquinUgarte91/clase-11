@@ -1,0 +1,24 @@
+
+/*--politicas--*/
+
+.politicas{
+    background-color: map-get($fondos, primario);
+    margin: 5% 10%;
+    color: rgb(226, 205, 205);
+    section {
+        display: flex;
+        align-items: center;
+        button {
+            width: 100px;
+            height: 30px;
+            border-radius: 10%;
+            align-self: flex-start;
+            margin-right: 10%;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+
+

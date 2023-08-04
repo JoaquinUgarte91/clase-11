@@ -1,0 +1,5 @@
+@mixin flex ($display, $ejex, $ejey){
+    display: $display;
+    justify-content: $ejex;
+    align-items: $ejey;
+}

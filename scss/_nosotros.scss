@@ -1,0 +1,40 @@
+.nosotros{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    .nosotros2{
+        flex: 1 1 100%;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .nosotros3{
+        margin-left: 13%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 500px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+    .nosotros4 {
+        margin-left: 13%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        img {
+            width: 500px;
+            order: 2;
+        }
+        p {
+            font-size: 30px;
+            flex: 1 1 50%; /* Ocupa el 50% del ancho en dispositivos pequeños */
+            order: 1; /* Cambia el orden para que el texto esté del lado izquierdo */
+        }
+    }
+}

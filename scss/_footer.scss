@@ -1,0 +1,64 @@
+/*--footer*/
+
+.footer{
+    background-color: map-get($fondos, primario);
+    padding: 70px 0;
+    .contenedor{
+        max-width: 1500px;
+        margin: 0 auto;
+        .footer-row{
+            display: flex;
+            flex-wrap: wrap;
+
+            .logo2{
+                width: 25%;
+                padding: 0 50px; 
+            }
+            .footer-link{
+                width: 25%;
+                padding: 0 15px;
+                h4{
+                    font-size: 20px;
+                    color: white;
+                    margin-bottom: 25px;
+                    margin-left: 30px;
+                    font-weight: 500;
+                    border-bottom: 2px solid #00c3ff;
+                    padding-bottom: 5px;
+                    display: inline-block;
+                }
+                ul li a{
+                    font-size: 18px;
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    margin-bottom: 15px;
+                    margin-left: 0;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: #00c3ff;
+                        padding-left: 6px;
+                    }
+                }
+                
+                .redes-sociales a {
+                    display: inline-block;
+                    min-height: 40px;
+                    width: 40px;
+                    background-color: white;
+                    margin: 0, 10px 10px 0;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    color: map-get($fondos, primario);
+                    transition: all .5s ease;
+                    &:hover{
+                        background-color: #243892;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

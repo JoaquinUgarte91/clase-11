@@ -1,0 +1,25 @@
+.agenda2{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    .agenda{
+        margin-left: 13%;
+        flex: 1 1 100%;
+        text-align: start;
+    }
+    .arctic{
+        margin-left: 13%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 500px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+}

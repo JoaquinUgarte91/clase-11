@@ -1,0 +1,111 @@
+@media (min-width: 50px) and (max-width: 750px){
+   
+    /*--Header nav sandwich--*/
+ 
+    header nav .nav__label{
+         display: block;
+         cursor: pointer;
+         color: white;
+         
+     }
+ 
+     header nav .nav__menu{
+         position: fixed;
+         top: 120px;
+         bottom: 0;
+         background: map-get($fondos, primario);
+         width: 100%;
+         left: 0;
+         display: flex;
+         justify-content: space-evenly;
+         flex-direction: column;
+         align-items: center;
+         clip-path: circle(0 at center);
+         transition: clip-path 1s ease-in-out;
+     }
+        .nav__input:checked + .nav__menu{
+         background: map-get($fondos, primario);
+         clip-path: circle(100% at center);
+         z-index: 100;
+         padding: 0;
+         margin: 0;
+ 
+     }
+
+ 
+     /*carousel*/
+ 
+     #carousel1{
+         width: 100%;
+         padding: 0;
+         margin: 0;
+     }
+
+     #carousel1 #carouselExampleCaptions {
+        width: 100%;}
+
+    #carousel1 #carouselExampleCaptions .carousel-caption{
+        z-index: 999;
+    }
+
+ 
+     /*MAIN-INDEX-EVENTOS*/
+ 
+     .eventos {
+        padding: 4px 2%;
+      }
+      .eventos h2 {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .btn2 button{
+        font-weight: 400;
+        font-size: 15px;
+    }
+ 
+     /*--eventos index grilla--*/
+ 
+     .eventosImg {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .card{
+        height: 35vh;
+        }
+
+        /*--Novedades index main--*/
+        
+        .novedades {
+            margin-left: 5%;
+        }
+
+        .novedades_index{
+            padding-bottom: 30px;
+        }
+        
+        .novedades h2{
+            font-weight: 600;
+            font-size: 20px;
+        }
+    
+        .novedadesImg {
+            padding: 0px;
+            grid-gap: 20px;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+    /*--Footer--*/
+
+    .footer .contenedor .footer-row{
+        text-align: center;
+    }
+
+    .footer .contenedor .footer-row .footer-link, .footer .contenedor .footer-row .logo2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}

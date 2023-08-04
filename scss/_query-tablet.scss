@@ -1,0 +1,99 @@
+@media (min-width: 751px) and (max-width: 1000px){
+    
+    /* header*/
+    
+    header{
+        padding: 5px 7%;
+    }
+    .logo img{
+        padding-left: -20px;
+    }
+    .nav__menu a{
+        font-size: 12px;
+    }
+
+    /*carousel*/
+
+    #carousel1{
+        width: 100%;
+    }
+
+    .carousel-caption h5{
+        font-size: 15px;
+    }
+    
+    /*MAIN-INDEX-EVENTOS*/
+
+    .eventos {
+        padding: 4px 6%;
+      }
+      .eventos h2 {
+        margin: 20px;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .btn2 button{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    
+    /*--eventos index grilla--*/
+
+     .eventosImg{
+        width: 82%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .card{
+        height: 40vh;
+    }
+    #card2{
+        display: none;
+    }
+
+    /*--Novedades index--*/
+    
+    .novedades {
+        margin-left: 9%;
+    }
+
+    .novedades_index{
+        padding-bottom: 30px;
+    }
+    .novedades h2{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .novedadesImg {
+        padding: 0px;
+        grid-gap: 20px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /*--footer--*/
+
+    .footer {
+        padding: 20px;
+    
+    }
+    .contenedor{
+        width: 100%;
+    }
+    
+    .footer .contenedor .footer-row .footer-link h4{
+        font-size: 15px;
+    }
+    
+    .footer .contenedor .footer-row .footer-link ul li a{
+        font-size: 13px;
+    }
+    .footer .contenedor .footer-row .footer-link .redes-sociales a{
+        min-height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+  
+}
