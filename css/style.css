@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+Nandinagari&family=Roboto&display=swap");
 * {
   padding: 0;
@@ -8,6 +9,21 @@
   font-family: "Roboto", sans-serif;
 }
 
+/*Variables*/
+@keyframes animacion-logo {
+  0% {
+    height: 100px;
+    width: auto;
+  }
+  50% {
+    height: 120px;
+    width: auto;
+  }
+  100% {
+    height: 100px;
+    width: auto;
+  }
+}
 /*-HEADER-*/
 header {
   position: fixed;
@@ -19,13 +35,16 @@ header {
   height: 120px;
   padding: 5px 12.5%;
   margin: auto;
-  z-index: 100;
+  z-index: 999;
 }
 header .logo img {
   height: 100px;
   width: auto;
-  transition: all 0.3s;
   padding-top: 10px;
+  animation-name: animacion-logo;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
 }
 header nav .nav__label, header nav .nav__input {
   display: none;
@@ -41,7 +60,7 @@ header nav .nav__menu .nav__item {
   text-decoration: none;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-header nav .nav__menu .nav__item::after {
+header nav .nav__menu .nav__item:after {
   content: "";
   display: block;
   background: white;
@@ -57,9 +76,10 @@ header nav .nav__menu .nav__item:hover {
 
 /*-main--index*/
 /*carrousel*/
-main{
+main {
   padding-top: 120px;
 }
+
 #carousel1 {
   display: flex;
   justify-content: center;
@@ -79,7 +99,7 @@ main{
   left: 0;
   bottom: 0;
 }
-#carousel1 #carouselExampleCaptions .carousel-caption .carousel-caption h5 {
+#carousel1 #carouselExampleCaptions .carousel-caption h5 {
   font-size: 20px;
   padding-bottom: 20px;
 }
@@ -91,15 +111,15 @@ main{
   align-items: center;
   padding: 5px 11%;
 }
-.eventos .eventos h2 {
-  margin: 20px;
+.eventos h2 {
+  margin: 10px;
   font-weight: 800;
 }
 .eventos .btn2 button {
   font-weight: 500;
   color: white;
   padding: 9px 25px;
-  background: #1a0930;
+  background: #1A0930;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -130,6 +150,10 @@ main{
   background-size: cover;
   background-position: center center;
 }
+.eventosImg .card:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
 .eventosImg .card .textos {
   height: 100%;
   color: white;
@@ -142,6 +166,10 @@ main{
 .novedades {
   margin: 20px;
   margin-left: 12%;
+}
+.novedades h2 {
+  margin: 10px;
+  font-weight: 800;
 }
 
 .novedadesImg {
@@ -156,6 +184,10 @@ main{
   position: relative;
   border-radius: 10px;
 }
+.novedadesImg .galeria_novedad:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
 .novedadesImg .galeria_novedad .galeria_titulo {
   position: absolute;
   bottom: 0;
@@ -167,10 +199,10 @@ main{
   font-size: 30px;
   border-radius: 10px;
 }
-.novedadesImg .galeria_novedad :nth-child(1) {
+.novedadesImg :nth-child(1) {
   grid-row-start: span 2;
 }
-.novedadesImg .galeria_novedad :nth-child(4) {
+.novedadesImg :nth-child(4) {
   grid-column-start: span 2;
 }
 .novedadesImg img {
@@ -179,6 +211,100 @@ main{
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+/*--noticias--*/
+.noticia2 {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.noticia2 .noticia {
+  margin-left: 13%;
+  flex: 1 1 100%;
+  text-align: start;
+}
+.noticia2 .arctic {
+  margin-left: 13%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.noticia2 .arctic img {
+  width: 500px;
+  margin-right: 20px;
+}
+.noticia2 .arctic p {
+  font-size: 30px;
+}
+
+.agenda2 {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.agenda2 .agenda {
+  margin-left: 13%;
+  flex: 1 1 100%;
+  text-align: start;
+}
+.agenda2 .arctic {
+  margin-left: 13%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.agenda2 .arctic img {
+  width: 500px;
+  margin-right: 20px;
+}
+.agenda2 .arctic p {
+  font-size: 30px;
+}
+
+.nosotros {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.nosotros .nosotros2 {
+  flex: 1 1 100%;
+  text-align: center;
+  margin: 5% 0;
+}
+.nosotros .nosotros3 {
+  margin-left: 13%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.nosotros .nosotros3 img {
+  width: 500px;
+  margin-right: 20px;
+}
+.nosotros .nosotros3 p {
+  font-size: 30px;
+}
+.nosotros .nosotros4 {
+  margin-left: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nosotros .nosotros4 img {
+  width: 500px;
+  order: 2;
+}
+.nosotros .nosotros4 p {
+  font-size: 30px;
+  flex: 1 1 50%; /* Ocupa el 50% del ancho en dispositivos pequeños */
+  order: 1; /* Cambia el orden para que el texto esté del lado izquierdo */
 }
 
 /*--footer*/
@@ -196,7 +322,7 @@ main{
 }
 .footer .contenedor .footer-row .logo2 {
   width: 25%;
-  padding: 0 15px;
+  padding: 0 50px;
 }
 .footer .contenedor .footer-row .footer-link {
   width: 25%;
@@ -206,6 +332,7 @@ main{
   font-size: 20px;
   color: white;
   margin-bottom: 25px;
+  margin-left: 30px;
   font-weight: 500;
   border-bottom: 2px solid #00c3ff;
   padding-bottom: 5px;
@@ -217,6 +344,7 @@ main{
   text-decoration: none;
   display: block;
   margin-bottom: 15px;
+  margin-left: 0;
   transition: all 0.3s ease;
 }
 .footer .contenedor .footer-row .footer-link ul li a:hover {
@@ -236,7 +364,28 @@ main{
   transition: all 0.5s ease;
 }
 .footer .contenedor .footer-row .footer-link .redes-sociales a:hover {
-  background-color: #00c3ff;
+  background-color: #243892;
+}
+
+/*--politicas--*/
+.politicas {
+  background-color: #1A0930;
+  margin: 5% 10%;
+  color: rgb(226, 205, 205);
+}
+.politicas section {
+  display: flex;
+  align-items: center;
+}
+.politicas section button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  align-self: flex-start;
+  margin-right: 10%;
+}
+.politicas section h1 {
+  font-size: 30px;
 }
 
 @media (min-width: 50px) and (max-width: 750px) {
@@ -273,8 +422,11 @@ main{
     padding: 0;
     margin: 0;
   }
-  #carouselExampleCaptions {
+  #carousel1 #carouselExampleCaptions {
     width: 100%;
+  }
+  #carousel1 #carouselExampleCaptions .carousel-caption {
+    z-index: 999;
   }
   /*MAIN-INDEX-EVENTOS*/
   .eventos {
@@ -287,7 +439,7 @@ main{
   }
   .btn2 button {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
   }
   /*--eventos index grilla--*/
   .eventosImg {
@@ -316,10 +468,10 @@ main{
     margin-left: 5%;
   }
   /*--Footer--*/
-  .footer-row {
+  .footer .contenedor .footer-row {
     text-align: center;
   }
-  .footer-link, .logo2 {
+  .footer .contenedor .footer-row .footer-link, .footer .contenedor .footer-row .logo2 {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -391,13 +543,13 @@ main{
   .contenedor {
     width: 100%;
   }
-  .footer-link h4 {
-    font-size: 14px;
+  .footer .contenedor .footer-row .footer-link h4 {
+    font-size: 15px;
   }
-  .footer-link ul li a {
-    font-size: 12px;
+  .footer .contenedor .footer-row .footer-link ul li a {
+    font-size: 13px;
   }
-  .redes-sociales a {
+  .footer .contenedor .footer-row .footer-link .redes-sociales a {
     min-height: 30px;
     width: 30px;
     line-height: 30px;
